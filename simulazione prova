@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+           div{
+              margin: 50px;
+              display: inline-block;
+           }
+           .square {
+            
+           }
