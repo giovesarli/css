@@ -40,9 +40,45 @@
             0% { background-position: 0px; }
             100% { background-position: 190px; }
         }
-    </style>
+        <body>
+    <div id="earth"></div></body>
+        <body>
+        <div id="mars"></div></body>
+        <style>
+    body { background-color: rgb(32, 5, 98); }
+    #earth {
+        background-image: url(https://www.ansa.it/webimages/ch_620x438/2022/10/11/7066261c5f8060e16785022efcfd57ab.jpg);
+        width: 80px;
+        height: 80px;
+        background-size: 230px;
+        margin: 90px auto;
+        border-radius: 65%;
+        position: relative;
+        animation-name: move,scale,rotate;
+        animation-duration: 3s,3s,4s;
+        animation-iteration-count: infinite,infinite,infinite;
+    }
+
+    @keyframes move {
+        0%   { left: 200px;  }
+        70%  { left: -200px; }
+        100% { left: 200px;  }
+    }
+
+    @keyframes scale {
+        0%  { transform: scale(1);   }
+        32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+        70% { transform: scale(1); animation-timing-function:  ease-in;  }
+        75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+        86% { transform: scale(2);  }
+        98% { transform: scale(1.2); }
+        100%{ transform: scale(1); }
+    }
+
+    @keyframes rotate {
+        0% { background-position: 0px; }
+        100% { background-position: 230px; }
+    }
+</style>
 </head>
-<body>
-    <div id="earth"></div>
-</body>
 </html>
